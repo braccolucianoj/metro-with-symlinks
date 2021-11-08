@@ -64,7 +64,7 @@ module.exports = symlinkedDependencies => {
           module.exports = {
             resolver: {
               extraNodeModules,
-              blacklistRE: require('metro-config/src/defaults/blacklist')(blacklistRegexes)
+              blacklistRE: require('metro-config/src/defaults/exclusionList')(blacklistRegexes)
             },
             watchFolders
           };
